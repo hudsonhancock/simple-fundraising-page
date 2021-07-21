@@ -1,3 +1,7 @@
+:root{
+    back
+}
+
 .container{
 position: relative;
 display: flex;
@@ -31,4 +35,7 @@ span{
     font-weight: bolder;
 }
 
-
+.jumbotron{
+    /* background-color: #00DB72;
+    color: #fff; */
+}
