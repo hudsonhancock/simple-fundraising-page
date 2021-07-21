@@ -8,6 +8,31 @@ display: flex;
 /* justify-content: center; */
 }
 
+h2{
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.coming-soon{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdown{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.day,.hour,.minute,.second{
+    font-size: 3rem;
+}
+
 .tithely-give-btn{
     position: absolute;
     margin-left: auto;
@@ -36,6 +61,9 @@ span{
 }
 
 .jumbotron{
-    /* background-color: #00DB72;
-    color: #fff; */
+    background: linear-gradient(217deg, #74d680, rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, #378b29, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #7bed9f, rgba(0,0,255,0) 70.71%);
+    color: #fff;
 }
+
