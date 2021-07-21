@@ -1,1 +1,1 @@
-alert('hello');
+var tw = create_tithely_widget();

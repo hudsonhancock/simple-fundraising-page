@@ -1,3 +1,34 @@
-body{
-    background-color: red;
+.container{
+position: relative;
+display: flex;
+/* justify-content: center; */
 }
+
+.tithely-give-btn{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #00DB72;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 19px; 
+    padding: 15px 70px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    background-image: none; 
+    color: white; 
+    text-shadow: none; 
+    /* display: flex;  */
+    float: none; 
+    border: none;
+   
+}
+
+span{
+    font-weight: bolder;
+}
+
+
