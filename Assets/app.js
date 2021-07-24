@@ -5,7 +5,7 @@ const countdown = () => {
 
     // console.log(gap);
 
-    //How the fuck does this time work?
+    //How the time works?
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
@@ -13,7 +13,7 @@ const countdown = () => {
     
     // console.log(day);
 
-    //Calculate the shit
+    //Calculate
     const textDay = Math.floor(gap / day);
     // console.log(textDay);
     const textHour = Math.floor((gap % day) / hour);
