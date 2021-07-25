@@ -10,7 +10,7 @@ justify-content: center;
 }
 
 body{
-    background-color: red;
+    background-color: #292929;
 }
 
 .btn_container{
@@ -22,12 +22,11 @@ body{
 #nav_btn{
     border: none;
     width: 100%;
-    background-color: #00DB72;
+    background: rgb(182, 211, 51);
     font-family: inherit;
     font-weight: bold;
     font-size: 19px; 
     padding: 15px 70px; 
-    border-radius: 4px; 
     cursor: pointer; 
     background-image: none; 
     color: white; 
@@ -38,7 +37,7 @@ body{
 }
 
 #nav_btn:hover{
-    background-color: #05ff86;
+    background-color: rgb(202, 235, 57);
 }
 
 
@@ -93,15 +92,23 @@ h2{
     font-size: 3rem;
 }
 
+form{
+    background-color: white;
+}
+
 
 span{
     font-weight: bolder;
 }
 
 .jumbotron{
-    background: linear-gradient(217deg, #748bd6, rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, #29648b, rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, #7bbaed, rgba(0,0,255,0) 70.71%);
+    background: 
+    linear-gradient(217deg, #748bd6, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, #29648b, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #7bbaed, rgba(0,0,255,0) 70.71%),
+    url('./Imgaes/food_bag_seal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: right;
     color: #fff;
     position: relative;
     background-color: white;
