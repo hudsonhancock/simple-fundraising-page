@@ -104,7 +104,7 @@ span{
 .jumbotron{
     background: 
     linear-gradient(217deg, #748bd6, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, #29648b, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #7bbaed, rgba(0,0,255,0) 70.71%),
-    url('./Imgaes/food_bag_seal.jpg');
+    /* url('./Imgaes/food_bag_seal.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
