@@ -1,6 +1,8 @@
 .wrapper{
     display: flex;
     flex-direction: column;
+    position:relative;
+    height: 100vh;
 }
 
 .hide{
@@ -13,9 +15,11 @@ display: flex;
 justify-content: center;
 }
 
-nav{
-    position: sticky;
-}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 body{
     background-color: #292929;
@@ -24,6 +28,9 @@ body{
 .btn_container{
     width: 100%;
     
+}
+nav{
+    z-index: 1;
 }
 
 .nav_btn{
@@ -113,6 +120,7 @@ span{
 }
 
 .jumbotron{
+    z-index: -1;
     background: 
     linear-gradient(217deg, #748bd6, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, #29648b, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #7bbaed, rgba(0,0,255,0) 70.71%);
     background-position: center;
@@ -120,7 +128,7 @@ span{
     background-size:cover;
     background-position-x: right;
     color: #fff;
-    position: relative;
+    margin-top:180px;
     background-color: white;
 }
 
@@ -156,13 +164,15 @@ iframe{
 
 footer{
     display: flex;
-    height: 60vh;
+    height: 40vh;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     padding: 30px 10px;
+    margin-top: 260px;
+    z-index: -1;
 }
 
 #footer_logo{
@@ -247,5 +257,13 @@ footer p{
 
     .container-hour, .container-minute, .container-second{
         display:block;
+    }
+
+    .jumbotron{
+        margin-top:70px;
+    }
+
+    footer{
+        margin-top:200px;
     }
 }
