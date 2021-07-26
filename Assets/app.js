@@ -1,3 +1,5 @@
+
+
 const countdown = () => {
     const countDate = new Date('October 17, 2021 10:00:00').getTime();
     const now = new Date().getTime();
@@ -31,4 +33,6 @@ const countdown = () => {
 
 setInterval(countdown, 1000);
 
-var tw = create_tithely_widget();
+// var tw = create_tithely_widget();
+
+var screenWidth = window.screen.width;

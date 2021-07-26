@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.hide{
+    display: none;
+}
+
 .container{
 position: relative;
 display: flex;
@@ -19,7 +23,7 @@ body{
     
 }
 
-#nav_btn{
+.nav_btn{
     border: none;
     width: 100%;
     background: rgb(182, 211, 51);
@@ -40,7 +44,9 @@ body{
     background-color: rgb(202, 235, 57);
 }
 
-
+#sign_up_btn{
+    background-color: orange;
+}
 
 .logo_container{
     display: flex;
@@ -52,11 +58,6 @@ body{
     margin-bottom: 0rem;
 }
 
-.tithely-give-btn{
-   
-
-}
-
 nav{
     display: flex;
     flex-direction: column;
@@ -65,7 +66,14 @@ nav{
     background-color: white;
 }
 
+#cutlery{
+position: relative;
+left: 50%;
+font-size: 48px;
+transform: translateX(-50%);
+margin: 0 0 40px 0;
 
+}
 
 h2{
     font-size: 5rem;
@@ -103,8 +111,7 @@ span{
 
 .jumbotron{
     background: 
-    linear-gradient(217deg, #748bd6, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, #29648b, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #7bbaed, rgba(0,0,255,0) 70.71%),
-    /* url('./Imgaes/food_bag_seal.jpg'); */
+    linear-gradient(217deg, #748bd6, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, #29648b, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #7bbaed, rgba(0,0,255,0) 70.71%);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -114,12 +121,17 @@ span{
     background-color: white;
 }
 
+.container-hour, .container-minute, .container-second{
+    display: none;
+}
+
 #video{
     background-color: white;
 }
 
 iframe{
     width: 100%;
+    height: 210px;
 }
 
 /* -----------MEDIA QUERIES------------------- */
@@ -130,10 +142,19 @@ iframe{
         flex-direction: row;
     }
 
-    #nav_btn{
+    .nav_btn{
         width: 200px;
         margin-right: 50px;
+        letter-spacing: 0px;
+        font-size: 12px;
+
     }
+
+    .nav_links{
+        display: flex;
+        align-items: center;
+    }
+
     #logo{
         margin-left: 50px;
         margin-bottom: 0;
@@ -154,5 +175,10 @@ iframe{
     iframe{
         width:560px;
         margin: 2rem;
+        height: 315px;
+    }
+
+    .container-hour, .container-minute, .container-second{
+        display:block;
     }
 }
