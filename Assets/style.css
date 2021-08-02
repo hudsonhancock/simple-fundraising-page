@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -16,40 +21,54 @@ justify-content: center;
 }
 
 body{
-    background-color: #292929;
+    background-color: whitesmoke;
 }
 
 .btn_container{
     width: 100%;
-    
 }
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+}
+
 nav{
     z-index: 1;
 }
 
-.nav_btn{
+.button{
     border: none;
-    width: 100%;
-    background: rgb(182, 211, 51);
-    font-family: inherit;
     font-weight: bold;
     font-size: 19px; 
-    padding: 15px 70px; 
     cursor: pointer; 
     background-image: none; 
-    color: white; 
-    text-shadow: none; 
+    color: white;  
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0;
+
+
+}
+
+#giveBtn{
+    background-color: rgb(182, 211, 52);
+}
+
+#idivBtn{
+    background-color: rgb(224, 133, 14);
+
+}
+
+#groupBtn{
+    background-color: rgb(14, 98, 224);
 
 }
 
 #nav_btn:hover{
     background-color: rgb(202, 235, 57);
-}
-
-#sign_up_btn{
-    background-color: orange;
 }
 
 .logo_container{
@@ -131,22 +150,20 @@ span{
 }
 
 #links{
-     background-color: white;
-     padding: 2rem 2rem; 
+     background-color: whitesmoke;
+     padding:0 1rem 1rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     /* z-index: -1;  */
-
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
+.video_and_info{
+    display: flex;
+    flex-direction: column;
+}
  
-
 #recapLink{
     background-color: #101010;
     color: white;
@@ -191,6 +208,10 @@ iframe{
   background-color: white;
 }
 
+#altDate{
+    display: none;
+}
+
 .ta-c{
   text-align: center;
   align-items: center;
@@ -202,6 +223,133 @@ iframe{
   justify-content: center;
   border: none;
 }
+/* ---------------------------------------------------- */
+
+.event{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+#event_img{
+    height: 100px;
+}
+
+.evcard{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.date_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#month_text{
+    font-size: 13px;
+    color: grey;
+}
+
+#icon_event{
+    font-size: 20px;
+    text-align: center;
+}
+
+.descri_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 0rem;
+    width: 115px;
+}
+
+.descri_container p{
+    margin-bottom: 0;
+    
+}
+
+#eTitle{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 25px;
+}
+
+#eday_time{
+    color: grey;
+}
+
+.eventImg{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.desk_eventInfo{
+    display: none;
+}
+
+/* ---------------------------------------------------- */
+
+
+.foodbanks h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+#local{
+    font-weight: 900;
+
+}
+
+.foodbanks{
+    background-color: #a2d468;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fbank_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.fbank{
+    color:#101010;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+}
+
+.m-b-1{
+    margin-bottom: 1rem;
+}
+
+.fbank:hover{
+    color: #fff;
+    background-color: #748bd6;
+}
+
+
+
+/* ---------------------------------------------------- */
 
 footer{
     display: flex;
@@ -213,7 +361,6 @@ footer{
     background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     padding: 30px 10px;
-    z-index: -1;
 }
 
 #footer_logo{
@@ -267,16 +414,29 @@ footer p{
         flex-direction: row;
     }
 
-    .nav_btn{
-        width: 200px;
-        margin-right: 50px;
-        letter-spacing: 0px;
-        font-size: 12px;
+    .desk_eventInfo{
+        display: block;
+    }
 
+    .event{
+        display: none;
+    }
+
+    .button{
+        width: 200px;
+        margin-right: 30px;
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
+
+    .button:hover{
+        color: #fff;
+        background-color: #101010;
     }
 
     .nav_links{
         display: flex;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -309,13 +469,9 @@ footer p{
         display:block;
     }
 
-    .jumbotron{
-        /* margin-top:70px; */
-    }
-
     #links{
       flex-direction: row;
-      height: 60vh;
+      height: 40vh;
     }
 
     iframe{
@@ -324,6 +480,86 @@ footer p{
       transform: translateX(-340px);
     }
 
-    footer{
+    .video_and_info{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
+
+    .foodbanks{
+      height: 40vh;
+
+    }
+
+    .fbank_container{
+        flex-direction: row;
+    }
+
+    .foodbanks h3{
+    font-size: 40px;
+
+    }
+
+    ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 2rem
+    }
+
+    .fbank{
+        padding: 1rem;
+        border-radius: 10px;
+        margin-right:1rem ;
+        font-size: 20px;
+    }
+
+    .m-b-1{
+        margin-bottom: 0;
+    }
+    
+
+
+    .evcard{
+        height: 315px;
+        width: 560px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .date_container{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        display: none;
+    }
+
+    #month_text{
+        font-size: 18px;
+
+    }
+
+    #eTitle{
+        display: none;
+    }
+    
+    #altDate{
+        font-size: 30px;
+        width: 100%;
+
+
+    }
+
+    #icon_event{
+
+    }
+
+    .eventImg{
+        display: none;
+    }
+
+    #altDate{
+        display: block;
+    }
+
 }

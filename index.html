@@ -38,13 +38,15 @@
 
             <div class="btn_container">
                 <div class="nav_links">
-                    <a href="https://mykeystone.ccbchurch.com/goto/forms/15/responses/new" target="_blank">
-                        <button target="_blank" class="nav_btn">Give</button>
-                    </a>
+                    <a id="giveBtn" href="https://mykeystone.ccbchurch.com/goto/forms/15/responses/new" class=button
+                        target="_blank" class="nav_btn">Give</a>
 
-                    <a href="https://mykeystone.ccbchurch.com/goto/forms/14/responses/new" target="_blank">
-                        <button target="_blank" id="sign_up_btn" class="nav_btn">Sign Up</button>
-                    </a>
+                    <a id="idivBtn" href="https://mykeystone.ccbchurch.com/goto/forms/14/responses/new" class="button"
+                        target="_blank" id="sign_up_btn" class="nav_btn">Individual Sign Up</a>
+
+                    <a id="groupBtn" href="https://mykeystone.ccbchurch.com/goto/forms/16/responses/new" class="button"
+                        target="_blank" id="sign_up_btn" class="nav_btn">Group Sign Up</a>
+
                 </div>
             </div>
 
@@ -85,11 +87,47 @@
 
         </div>
 
-        <section class="flex-column justify-content-center align-content-center">
-            <iframe modestbranding=1 width="560" height="315" src="https://www.youtube.com/embed/av9DL7-00MQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <section class="video_and_info">
+            <section class="flex-column justify-content-center align-content-center">
+                <iframe modestbranding=1 width="560" height="315" src="https://www.youtube.com/embed/av9DL7-00MQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
+
+            <section class="event">
+                <div class="evcard">
+                    <div class="descri_container">
+                        <p id="eTitle">Feed The Hungry</p>
+                        <p id="altDate">October 23rd</p>
+                        <p id="eday_time">Sat, 9:45AM</p>
+                        <p id="eday_time">Keystone Baptist Church</p>
+                        <p id="elocation"></p>
+                    </div>
+                    <div class="date_container">
+                        <h3>23</h3>
+                        <p id="month_text">OCT</p>
+                        <i id="icon_event" class="fa fa-calendar-check-o"></i>
+                    </div>
+                    <div class="eventImg">
+                        <img id="event_img" src="./Assets/Imgaes/scale_adobespark.jpeg"
+                            alt="dry macoroni pasta in plastic bag on scale">
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="desk_eventInfo m-3 text-center">
+            <div class="card">
+                <h3 class="pt-4">Feed The Hungry</h3>
+                <p id="">Sat, October 23rd</p>
+                <p id=""> 9:45AM</p>
+                <p class="pb-4">Keystone Baptist Church</p>
+
+            </div>
+
         </section>
 
 
@@ -107,6 +145,17 @@
             <div class="card">
                 <i id="check" class="fa fa-handshake-o" aria-hidden="true"></i>
                 <h2>We need <span>you</span> in order to reach our goal.</h2>
+            </div>
+
+        </section>
+
+        <section class="foodbanks">
+            <h3>We support <span id="local">local</span> food banks:</h3>
+            <div class="fbank_container">
+                <a class="fbank m-b-1" href="http://hhpcga.org/">Helping Hands Ministry</a>
+                <a class="fbank m-b-1" href="https://thecfr.org/">The Center For Family Resources</a>
+                <a class="fbank m-b-1" href="https://www.cayaministries.com/">CAYA Reconciliation Ministries</a>
+                <a class="fbank" href="https://www.salvationarmyusa.org/usn/">Salvation Army</a>
             </div>
 
         </section>
