@@ -33,6 +33,10 @@ body{
     flex-direction: column;
 }
 
+#links hr{
+    width: 70%;
+}
+
 nav{
     z-index: 1;
 }
@@ -54,27 +58,17 @@ nav{
 }
 
 #giveBtn{
-    background-color: rgb(182, 211, 52);
-}
-
-#idivBtn{
-    background-color: rgb(224, 133, 14);
-
-}
-
-#groupBtn{
-    background-color: rgb(14, 98, 224);
-
+    background-color: #A2C244;
 }
 
 #nav_btn:hover{
-    background-color: rgb(202, 235, 57);
+    background-color: #A2C244;
 }
 
 .logo_container{
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 40px 0;
 }
 
 #logo{
@@ -98,9 +92,14 @@ margin: 0 0 40px 0;
 
 }
 
+#jumbo_h{
+    font-weight: 900;
+    text-align: center;
+}
+
 h2{
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: ;
     /* padding: 3rem; */
 }
 
@@ -135,7 +134,7 @@ span{
 .jumbotron{
     /* z-index: -1; */
     background: 
-    linear-gradient(217deg, #748bd6, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, #29648b, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #7bbaed, rgba(0,0,255,0) 70.71%);
+    linear-gradient(217deg, #288EC9, rgba(255,0,0,0) 70.71%), linear-gradient(127deg, #288EC9, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #288EC9, rgba(0,0,255,0) 70.71%);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -144,6 +143,56 @@ span{
     /* margin-top:180px; */
     background-color: white;
 }
+
+/* ------------------------------------------------ */
+
+
+.signup{
+    background-color: #A2C244;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+
+}
+
+.sign_up_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign_up_btn{
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: .5rem;
+    background-color: #288EC9;
+    width:200px;
+    height: 200px;
+    line-height: 165px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #646464;
+}
+
+.sign_up_btn:hover{
+    background-color: #289bc9;
+    color: #fff;
+}
+
+#sign_up_text{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* ------------------------------------------------ */
 
 .container-hour, .container-minute, .container-second{
     display: none;
@@ -168,7 +217,7 @@ span{
     background-color: #101010;
     color: white;
     padding: 20px 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
@@ -180,12 +229,12 @@ span{
 
 #links h2{
     font-size: 18pt;
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 #check {
     font-size: 48px;
-    color: #B6D333;
+    color: #A2C244;
     padding-top: 2rem;
     text-align: center;
 }
@@ -193,7 +242,7 @@ span{
 .recap{
     display: flex;
     height: 400px;
-    background-color: red;
+    /* background-color: red; */
     align-items: center;
 }
 
@@ -219,6 +268,7 @@ iframe{
 
 .card{
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   border: none;
@@ -245,6 +295,27 @@ iframe{
     width: 100%;
     justify-content: space-around;
 
+}
+
+.desk_eventInfo{
+    width: 100%;
+    display: flex;
+
+}
+
+#container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#links, .desk_eventInfo{
+    width: 60rem;
+}
+
+#links{
+    /* background-color: red; */
+    width: 100%;
 }
 
 .date_container{
@@ -306,6 +377,7 @@ iframe{
     text-align: center;
     margin-bottom: 1rem;
     font-size: 20px;
+    color: #fff;
 }
 
 #local{
@@ -314,7 +386,7 @@ iframe{
 }
 
 .foodbanks{
-    background-color: #a2d468;
+    background-color: #A2C244;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -325,12 +397,13 @@ iframe{
 .fbank_container{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .fbank{
-    color:#101010;
+    color:#288EC9;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 900;
     background-color: #fff;
     text-decoration: none;
     text-align: center;
@@ -459,9 +532,9 @@ footer p{
     }
 
     iframe{
-        width:560px;
+        width:912px;
         margin: 2rem;
-        height: 315px;
+        height: 513px;
   
     }
 
@@ -470,14 +543,24 @@ footer p{
     }
 
     #links{
-      flex-direction: row;
-      height: 40vh;
+      flex-direction: column;
+      /* height: 40vh; */
+      background-color: #fff;
     }
 
     iframe{
       position:relative;
-      left: 50%;
-      transform: translateX(-340px);
+
+    }
+
+    #stats{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+    }
+
+    h2{
+        text-align: center;
     }
 
     .video_and_info{
@@ -493,6 +576,7 @@ footer p{
 
     .fbank_container{
         flex-direction: row;
+        width: 70%;
     }
 
     .foodbanks h3{
@@ -511,7 +595,7 @@ footer p{
         padding: 1rem;
         border-radius: 10px;
         margin-right:1rem ;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 
     .m-b-1{
@@ -560,6 +644,19 @@ footer p{
 
     #altDate{
         display: block;
+    }
+    .sign_up_links{
+        flex-direction: row;
+        margin-bottom: 0px;
+        justify-content: space-around;
+        margin: 0 5rem;
+        width: 70%;
+    }
+
+    .signup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

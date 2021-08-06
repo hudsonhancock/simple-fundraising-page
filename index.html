@@ -39,13 +39,7 @@
             <div class="btn_container">
                 <div class="nav_links">
                     <a id="giveBtn" href="https://mykeystone.ccbchurch.com/goto/forms/15/responses/new" class=button
-                        target="_blank" class="nav_btn">Give</a>
-
-                    <a id="idivBtn" href="https://mykeystone.ccbchurch.com/goto/forms/14/responses/new" class="button"
-                        target="_blank" id="sign_up_btn" class="nav_btn">Individual Sign Up</a>
-
-                    <a id="groupBtn" href="https://mykeystone.ccbchurch.com/goto/forms/16/responses/new" class="button"
-                        target="_blank" id="sign_up_btn" class="nav_btn">Group Sign Up</a>
+                        target="_blank" class="nav_btn">DONATE</a>
 
                 </div>
             </div>
@@ -56,7 +50,7 @@
 
         <div class="py-5 jumbotron">
             <i id="cutlery" class="fa fa-cutlery" aria-hidden="true"></i>
-            <h1 class="display-4 d-flex justify-content-center">Let's Feed The Hungry</h1>
+            <h1 id="jumbo_h" class="display-4 d-flex justify-content-center">Let's Feed The Hungry</h1>
             <p class="text-center mx-4 lead d-flex justify-content-center">Our goal is to pack 50,000 meals. Help us
                 reach our goal by giving and volunteering!</p>
             <hr class="my-4">
@@ -87,6 +81,23 @@
 
         </div>
 
+        <section class="signup">
+            <div class="signup_heading">
+                <h3 id="sign_up_text">Sign Up Below</h3>
+            </div>
+            <div class="sign_up_links">
+
+                <a id="sign_up_btn" href="https://mykeystone.ccbchurch.com/goto/forms/14/responses/new"
+                    class="sign_up_btn" target="_blank" id="" class="">Individual</a>
+
+                <a id="sign_up_btn" href="https://mykeystone.ccbchurch.com/goto/forms/16/responses/new"
+                    class="sign_up_btn" target="_blank" id="" class="">Group</a>
+
+                <a id="sign_up_btn" href="https://mykeystone.ccbchurch.com/goto/forms/17/responses/new"
+                    class="sign_up_btn" target="_blank" id="" class="">Silent Auction</a>
+            </div>
+        </section>
+
         <section class="video_and_info">
             <section class="flex-column justify-content-center align-content-center">
                 <iframe modestbranding=1 width="560" height="315" src="https://www.youtube.com/embed/av9DL7-00MQ"
@@ -101,8 +112,7 @@
                         <p id="eTitle">Feed The Hungry</p>
                         <p id="altDate">October 23rd</p>
                         <p id="eday_time">Sat, 9:45AM</p>
-                        <p id="eday_time">Keystone Baptist Church</p>
-                        <p id="elocation"></p>
+                        <p id="elocation">Keystone Baptist Church</p>
                     </div>
                     <div class="date_container">
                         <h3>23</h3>
@@ -119,39 +129,46 @@
 
         </section>
 
-        <section class="desk_eventInfo m-3 text-center">
-            <div class="card">
-                <h3 class="pt-4">Feed The Hungry</h3>
-                <p id="">Sat, October 23rd</p>
-                <p id=""> 9:45AM</p>
-                <p class="pb-4">Keystone Baptist Church</p>
-
-            </div>
+        <section id="container">
 
         </section>
 
 
         <section id="links" class="d-flex justify-content-center">
-            <div class="card">
-                <i id="check" class="fa fa-calendar" aria-hidden="true"></i>
-                <h2>Last year we packed <span>40,176</span> meals.</h2>
+            <section class="desk_eventInfo m-3 text-center">
+                <div class="">
+                    <h3 class="fw-bolder pt-4">Save The Date</h3>
+                    <p id="">Sat, October 23rd</p>
+                    <p id=""> 9:45AM</p>
+                    <p class="pb-4">Keystone Baptist Church</p>
 
-            </div>
+                </div>
 
-            <div class="card">
-                <i id="check" class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <h2>This year our goal is <span>50,000</span> meals.</h2>
-            </div>
-            <div class="card">
-                <i id="check" class="fa fa-handshake-o" aria-hidden="true"></i>
-                <h2>We need <span>you</span> in order to reach our goal.</h2>
+            </section>
+            <hr>
+            <div id="stats">
+                <div class="card">
+                    <i id="check" class="fa fa-calendar" aria-hidden="true"></i>
+                    <h2>Last year we packed <span>40,176</span> meals.</h2>
+
+                </div>
+
+                <div class="card">
+                    <i id="check" class="fa fa-check-circle-o" aria-hidden="true"></i>
+                    <h2>This year our goal is <span>50,000</span> meals.</h2>
+                </div>
+                <div class="card">
+                    <i id="check" class="fa fa-handshake-o" aria-hidden="true"></i>
+                    <h2>We need <span>you</span> in order to reach our goal.</h2>
+                </div>
+
             </div>
 
         </section>
 
         <section class="foodbanks">
             <h3>We support <span id="local">local</span> food banks:</h3>
-            <div class="fbank_container">
+            <div class="fbank_container d-flex align-content-center">
                 <a class="fbank m-b-1" href="http://hhpcga.org/">Helping Hands Ministry</a>
                 <a class="fbank m-b-1" href="https://thecfr.org/">The Center For Family Resources</a>
                 <a class="fbank m-b-1" href="https://www.cayaministries.com/">CAYA Reconciliation Ministries</a>
